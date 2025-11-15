@@ -1,0 +1,37 @@
+{% include "header.html" %}
+
+    <div class="container">
+
+        <div class="content">
+            <h2> Admin Page</h2>
+            <p>This is Admin page </p>
+
+ <form  action="/admindashbord"  method="post">
+<hr>
+        Username <input type="text" name="txtusername" class="form-control">
+        <hr>
+        Password <input type="password" name="txtpassword" class="form-control">
+            <br> <hr>
+        <input type="submit" value="login" class="btn btn-success" >
+        <br> <br>
+        <hr>
+
+         <font color="red" > {{message}} </font>
+
+            </form>
+             </div>
+
+
+        <div class="sidebar">
+            Sidebar
+            <ul>
+                <li>------</li>
+                <li>------</li>
+                <li>------</li>
+                <li>------</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

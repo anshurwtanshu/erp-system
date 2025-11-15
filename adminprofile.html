@@ -1,0 +1,35 @@
+{% include "adminheader.html" %}
+
+    <div class="container">
+        <div class="content">
+            <h3>Employee Profile</h3>
+<hr> <br>
+            <form action="/adminempupdate" method="post">
+
+                {% for n in recordlist %}
+
+ Id <input type="text"  value="{{n[0]}}" name="txtId" class="form-control">
+            Name <input type="text"  value="{{n[1]}}" name="txtname" class="form-control">
+            EmailId <input type="text"   value="{{n[2]}}" name="txtemail" class="form-control">
+            Mobile <input type="text"  value="{{n[3]}}"  name="txtmobile" class="form-control">
+            Designation  <input type="text"  value="{{n[4]}}"   name="txtdesignation" class="form-control">
+            Salary  <input type="text"  value="{{n[5]}}"   name="txtsalary" class="form-control">
+
+            <br>
+            <br>
+            <input type="submit" value="Update" class="btn btn-success">
+                &nbsp;       &nbsp;       &nbsp;       &nbsp;
+                 <a href="/admin_emp_delete?id={{n[0]}}"  class="btn btn-danger">delete
+                {% endfor %}
+ </form>
+        </div>
+
+        <div class="sidebar">
+         <h3>Dashbord</h3>
+            <img src="/static/images/admin.webp" width="100px">
+
+        </div>
+    </div>
+
+</body>
+</html>

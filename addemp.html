@@ -1,0 +1,29 @@
+{% include "adminheader.html" %}
+
+    <div class="container">
+        <div class="content">
+            <h3>Employee Registration Form</h3>
+<hr> <br>
+            <form action="/regsuccess" method="post">
+                empid<input type="text"  name="txtID" class="form-control">
+            Name <input type="text"  name="txtname" class="form-control">
+            EmailId <input type="text" name="txtemail" class="form-control">
+            Mobile <input type="text" name="txtmobile" class="form-control">
+            Designation  <input type="text" name="txtdesignation" class="form-control">
+            Salary  <input type="text" name="txtsalary" class="form-control">
+
+            <br>
+            <input type="submit" value="register" class="btn btn-warning">
+
+</form>
+        </div>
+
+        <div class="sidebar">
+         <h3>Dashbord</h3>
+            <img src="/static/images/admin.webp" width="100px">
+
+        </div>
+    </div>
+
+</body>
+</html>
